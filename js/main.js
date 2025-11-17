@@ -8,10 +8,8 @@ toggle.addEventListener('click',()=>{
   html.setAttribute('data-theme',actual);
   localStorage.setItem('tema',actual);
 });
-
-// año dinámico
+// año
 document.getElementById('year').textContent = new Date().getFullYear();
-
 // scroll suave
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
   a.addEventListener('click',e=>{
