@@ -5,7 +5,7 @@
   --clr-primary-dark:#0055cc;
   --radius:8px;
   --transition:.3s ease;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --font-main:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 [data-theme="dark"]{
   --clr-bg:#121212;
@@ -14,14 +14,15 @@
   --clr-primary-dark:#339af0;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--clr-bg);color:var(--clr-text);line-height:1.6;transition:background var(--transition),color var(--transition)}
+body{background:var(--clr-bg);color:var(--clr-text);font-family:var(--font-main);line-height:1.6;transition:background var(--transition),color var(--transition)}
 .container{width:90%;max-width:1100px;margin:auto}
 img{max-width:100%;display:block;border-radius:var(--radius)}
 .header{padding:1rem 0;position:sticky;top:0;background:var(--clr-bg);z-index:10;border-bottom:1px solid #ddd3}
 .header__inner{display:flex;justify-content:space-between;align-items:center}
-.logo{font-size:1.5rem;font-weight:700;color:var(--clr-primary)}
-.theme-toggle{background:none;border:none;font-size:1.5rem;cursor:pointer;transition:transform var(--transition)}
+.logo img{height:40px;width:auto;display:block}
+.theme-toggle{background:none;border:none;color:var(--clr-text);cursor:pointer;padding:.25rem;transition:transform var(--transition)}
 .theme-toggle:hover{transform:rotate(30deg)}
+.theme-toggle svg{width:24px;height:24px}
 .hero{padding:4rem 0 3rem;text-align:center}
 .hero__title{font-size:clamp(2rem,5vw,3rem);margin-bottom:1rem}
 .hero__subtitle{font-size:1.1rem;margin-bottom:2rem;max-width:600px;margin-inline:auto}
@@ -29,9 +30,9 @@ img{max-width:100%;display:block;border-radius:var(--radius)}
 .btn:hover{background:var(--clr-primary-dark)}
 .grid-3{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
 .grid-2{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
-.card,.service{background:var(--clr-bg);border:1px solid #ddd3;border-radius:var(--radius);padding:1.5rem;text-align:center;transition:transform var(--transition),box-shadow var(--transition)}
-.card:hover,.service:hover{transform:translateY(-4px);box-shadow:0 8px 20px #0002}
-.card__icon{font-size:2.5rem;margin-bottom:.5rem}
+.card,.service,.case{background:var(--clr-bg);border:1px solid #ddd3;border-radius:var(--radius);padding:1.5rem;transition:transform var(--transition),box-shadow var(--transition)}
+.card:hover,.service:hover,.case:hover{transform:translateY(-4px);box-shadow:0 8px 20px #0002}
+.service img{width:80px;margin:0 auto 1rem}
 .steps{padding:3rem 0}
 .steps__list{list-style:none;counter-reset:step;padding-left:1rem;margin-top:1rem;border-left:3px solid var(--clr-primary)}
 .steps__list li{counter-increment:step;margin-bottom:1.2rem;position:relative;padding-left:2rem}
