@@ -8,21 +8,28 @@
   <meta property="og:description" content="Ahorra hasta un 40 % del tiempo operativo en menos de 90 días con IA y n8n.">
   <meta property="og:image" content="https://orivonminds.com/images/automatizacion.png">
   <title>Orivon Minds — Automatización Inteligente</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+  <link rel="icon" href="images/logo.svg">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header class="header">
     <div class="container header__inner">
-      <a href="/" class="logo"><img src="images/logo.svg" alt="Orivon Minds" width="140" height="40"></a>
-      <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">🌗</button>
+      <a href="/" class="logo">
+        <img src="images/logo.svg" alt="Orivon Minds" width="160" height="40">
+      </a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"/>
+          <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        </svg>
+      </button>
     </div>
   </header>
 
   <main>
     <section class="hero">
       <div class="container hero__content">
-        <h2 class="hero__title">Automatización con IA que ahorra tiempo y reduce costes</h2>
+        <h1 class="hero__title">Automatización con IA que ahorra tiempo y reduce costes</h1>
         <p class="hero__subtitle">Ahorra hasta un <strong>40 %</strong> del tiempo operativo en menos de 90 días con soluciones seguras (n8n + APIs oficiales).</p>
         <a href="#contacto" class="btn">Solicitar auditoría gratuita</a>
       </div>
@@ -31,17 +38,14 @@
     <section class="benefits">
       <div class="container grid-3">
         <article class="card">
-          <span class="card__icon">⏱️</span>
           <h3>Ahorro de tiempo</h3>
           <p>Automatiza tareas repetitivas para que tu equipo se enfoque en lo que genera ingresos.</p>
         </article>
         <article class="card">
-          <span class="card__icon">🔐</span>
           <h3>Seguridad y fiabilidad</h3>
           <p>Implementaciones con n8n y APIs oficiales, siguiendo buenas prácticas y protección de datos.</p>
         </article>
         <article class="card">
-          <span class="card__icon">📈</span>
           <h3>ROI claro</h3>
           <p>Propuestas basadas en impacto real y ahorro estimado — pagas según el valor que aportamos.</p>
         </article>
@@ -96,15 +100,47 @@
       </div>
     </section>
 
+    <section class="cases">
+      <div class="container">
+        <h2>Casos de éxito</h2>
+        <div class="grid-2">
+          <article class="case">
+            <h3>Agencia de marketing – Lead flow automatizado</h3>
+            <p>Problema: pérdida de leads por procesos manuales.<br>
+            Solución: flujo automático que captura, enriquece y distribuye leads.<br>
+            Resultado: +30 % conversiones y -50 % tiempo manual.</p>
+          </article>
+          <article class="case">
+            <h3>Consultoría – Integración de herramientas</h3>
+            <p>Problema: datos dispersos y errores de sincronización.<br>
+            Solución: integraciones seguras y centralizadas.<br>
+            Resultado: -40 % errores y visibilidad total del pipeline.</p>
+          </article>
+          <article class="case">
+            <h3>Startup – CRM automatizado</h3>
+            <p>Problema: seguimiento manual de clientes.<br>
+            Solución: automatización de CRM y notificaciones.<br>
+            Resultado: +25 % eficiencia del equipo comercial.</p>
+          </article>
+          <article class="case">
+            <h3>E-commerce – Control de stock y pedidos</h3>
+            <p>Problema: errores y retrasos en pedidos.<br>
+            Solución: flujo automático de inventario y envío.<br>
+            Resultado: errores <5 % y entrega 24 h más rápida.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="contacto" class="contact">
       <div class="container">
         <h2>Solicita tu auditoría gratuita</h2>
-        <form class="form" action="https://formsubmit.co/tu@email.com" method="POST">
+        <form class="form" action="https://formsubmit.co/pineirobellasanton@gmail.com" method="POST">
           <input type="text" name="nombre" placeholder="Tu nombre" required>
           <input type="email" name="email" placeholder="Tu email" required>
           <textarea name="mensaje" placeholder="Cuéntanos brevemente tu proceso" rows="4" required></textarea>
           <input type="hidden" name="_next" value="https://[usuario].github.io/[repo]/gracias.html">
-          <button type="submit" class="btn">Enviar →</button>
+          <button type="submit" class="btn">Enviar</button>
         </form>
       </div>
     </section>
@@ -112,7 +148,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p>© <span id="year"></span> Orivon Minds · Hecho con ❤️ y IA</p>
+      <p>© 2025 Orivon Minds. Todos los derechos reservados.</p>
     </div>
   </footer>
 
